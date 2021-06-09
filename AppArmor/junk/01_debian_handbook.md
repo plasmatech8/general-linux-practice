@@ -4,7 +4,6 @@ See:
 * [Debian Handbook](https://debian-handbook.info/browse/stable/sect.apparmor.html)
 * [AppArmor Website](https://apparmor.net/)
 
-
 Contents:
 - [AppArmor](#apparmor)
   - [01. Introduction](#01-introduction)
@@ -82,3 +81,9 @@ For each permission event, we have a set of choices available:
 * Inherit = Inherits this permission from parent
 * Named/Profile = Inherit this permission from another profile by name
 * Child = Transition to a subprofile/child-profile of the current process
+
+```
+sudo vim /etc/apparmor.d/home.mark.Code.general-linux-practice.AppArmor.examples.a.out
+sudo apparmor_parser -r /etc/apparmor.d/home.mark.Code.general-linux-practice.AppArmor.examples.a.out
+./a.out hello.txt
+```
