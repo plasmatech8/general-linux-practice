@@ -41,6 +41,11 @@ AppArmor can mediate access to:
 * unix sockets
 * ...
 
+Notes:
+* aa-logprof = update an existing profile based on the logs
+* aa-genprof = create new profile with optional scan
+* aa-autodep = a very basic new profile (genprof is better)
+* aa-easyprof = template-based profile generation
 
 ## Resources
 
